@@ -42,22 +42,19 @@ i:hover {
   display: inline-block;
   transition: all 0.3s ease 0s;
 }
-#signin:hover{
+
+#signin:hover {
   background-color: rgb(32, 191, 107, .2);
-  color:white;
+  color: white;
 }
 
 #current {
   font-style: italic;
 }
 
-#suggestion {
+#suggestion {}
 
-  padding-top: 12px;
-  padding-right: 12em;
-}
-
-.suggestion {
+.suggestion-item {
   border-top: 1px solid;
   border-color: grey;
   padding-top: 8px;
@@ -79,7 +76,8 @@ i:hover {
   z-index: 1;
   transition: all .2s linear;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     position: absolute;
     width: 35%;
@@ -102,7 +100,8 @@ i:hover {
   &:hover {
     border: solid 8px #777;
 
-    &:after, &:before {
+    &:after,
+    &:before {
       background: #777;
     }
   }
@@ -110,7 +109,8 @@ i:hover {
   &:active {
     border: solid 8px #111;
 
-    &:after, &:before {
+    &:after,
+    &:before {
       background: #111;
     }
   }
