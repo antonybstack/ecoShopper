@@ -6,6 +6,10 @@
     "default_popup": "eco.html",
     "default_icon": "hello_extensions.png"
   },
+  "permissions": [
+"activeTab",
+"<all_urls>"
+],
   "manifest_version": 2,
   "commands": {
     "_execute_browser_action": {
@@ -13,6 +17,7 @@
         "default": "Ctrl+Shift+F",
         "mac": "MacCtrl+Shift+F"
       },
+
       "description": "Opens eco.html"
     }
   }
