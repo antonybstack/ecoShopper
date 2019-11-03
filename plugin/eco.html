@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <link href="eco.css" rel="stylesheet" id="eco-css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="get_data.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,27 +23,128 @@
     </div>
     <div>
       <i class="fa fa-arrow-left"></i>
-      <span id="current">Current product name</span>
+      <span id="current">See other products</span>
       <i class="fa fa-arrow-right"></i>
     </div>
     <section id="suggestion">
-      <span><br>Suggestions</span>
-      <div class="suggestion-item">
-        <img src="eco_image.jpg" alt="no image" width="37px" height="30px">
-        <span>eco-friendly product name</span>
-        <span>$9.99</span>
-      </div>
-      <div class="suggestion-item">
-        <img src="eco_image.jpg" alt="no image" width="37px" height="30px">
-        <span>eco-friendly product name</span>
-        <span>$9.99</span>
-      </div>
-      <div class="suggestion-item">
-        <img src="eco_image.jpg" alt="no image" width="37px" height="30px">
-        <span>eco-friendly product name</span>
-        <span>$9.99</span>
+      <span>Suggestions</span>
+      <div id="results">
+        <div id="slider">
+          <ul>
+            <li class="bottles">
+              <div class="suggestion-item">
+                <img src="https://i.etsystatic.com/18014665/r/il/da6684/2045221460/il_1588xN.2045221460_4g8z.jpg"
+                  alt="Image" width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Bees Stainless Steel...</span>
+                  <span class="price">$25.20 </span>
+                  <a title="Bees Stainless Steel Water Bottle"
+                    href="https://www.etsy.com/listing/744746251/bees-stainless-steel-water-bottle-eco?gpla=1&gao=1&utm_campaign=shopping_us_MagicInColors_sfc_osa&utm_medium=cpc&utm_source=google&utm_custom1=0&utm_content=18014665&gclid=EAIaIQobChMI0PD3yL3O5QIVQWoqCh1q0g4jEAkYASABEgIzpvD_BwE"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51OVq1duZCL._AC_.jpg" alt="Image"
+                  width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Pronova Eco-Friendly...</span>
+                  <span class="price">$14.99</span>
+                  <a title="Pronova Eco-Friendly Water Bottle"
+                    href="https://www.amazon.com/Pronova-Eco-Friendly-Plastic-Biodegradable-Portable/dp/B07KJZTBCS/ref=asc_df_B07KJZTBCS/?tag=hyprod-20&linkCode=df0&hvadid=241958812525&hvpos=1o1&hvnetw=g&hvrand=18400709229278152441&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009749&hvtargid=pla-602861859031&psc=1"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71hNgHYQeKL._AC_SL1500_.jpg" alt="Image"
+                  width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Single wall Stainless Steel...</span>
+                  <span class="price">$14.99</span>
+                  <a title="Single wall Stainless Steel Water Bottle"
+                    href="https://www.amazon.com/Bambaw-Stainless-Friendly-Reusable-Leakproof/dp/B07MBBP71L/ref=asc_df_B07MBBP71L/?tag=hyprod-20&linkCode=df0&hvadid=312133038700&hvpos=1o1&hvnetw=g&hvrand=8642036274157075950&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009749&hvtargid=pla-657127202570&psc=1"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+            </li>
+            <li class="plastic bags">
+              <div class="suggestion-item">
+                <img
+                  src="https://greenpaperproducts.com/images/biodegradable/trash-bags/compostable-kitchen-trash-bag-lg-G100.jpg"
+                  alt="Image" width="37px" height="30px">
+                <div class="content">
+                  <span class="title">2.5 gal Certified Compostable...</span>
+                  <span class="price">$12.67</span>
+                  <a title="2.5 gal Certified Compostable"
+                    href="https://greenpaperproducts.com/biodegradable-trash-bags-kitchen-g100.aspx?var=90ik=380&gclid=EAIaIQobChMI_oiB0r7O5QIVBtRkCh04bgTUEAkYASABEgKL6_D_BwE"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img
+                  src="https://images.plasticplace.com/media/catalog/product/cache/1/image/397x/9df78eab33525d08d6e5fb8d27136e95/W/4/W42LDBS2_42-Gal-Eco-friendly-2-Mil-Equiv-_1_1.jpg"
+                  alt="Image" width="37px" height="30px">
+                <div class="content">
+                  <span class="title">42 Gal Eco-friendly...</span>
+                  <span class="price">$55.39</span>
+                  <a title="42 Gal Eco-friendly"
+                    href="https://www.plasticplace.com/42-gallon-black-2-mil-equiv-40x47-100-case?gclid=EAIaIQobChMI_oiB0r7O5QIVBtRkCh04bgTUEAkYAiABEgKII_D_BwE"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71hSFSwyFdL._AC_SL1300_.jpg" alt="Image"
+                  width="37px" height="30px">
+                <div class="content">
+                  <span class="title">100-Piece Biodegradable...</span>
+                  <span class="price">$14.99</span>
+                  <a title="100-Piece Biodegradable"
+                    href="https://www.amazon.com/100-Piece-Biodegradable-Compost-Bags-Eco-Friendly/dp/B072WKL14N/ref=asc_df_B072WKL14N/?tag=hyprod-20&linkCode=df0&hvadid=309748512677&hvpos=1o1&hvnetw=g&hvrand=1094035306443533749&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009749&hvtargid=pla-570918674861&psc=1"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+            </li>
+            <li class="pencils">
+              <div class="suggestion-item">
+                <img
+                  src="https://res.cloudinary.com/forallpromos/image/fetch/f_auto/https://www.4allpromos.com/sites/default/files/imagecache/420x420/images/products/734036/977-309017.jpg"
+                  alt="Image" width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Sprout Pencil Eco...</span>
+                  <span class="price">$1.47</span>
+                  <a title="Sprout Pencil Eco Friendly"
+                    href="https://www.4allpromos.com/product/sprout-pencil-eco-friendly?default-tier=sample&default-qty=1&mkwid=sTyTxvRCJ%7Cpcrid%7C322811728040%7Cpmt%7C%7Cpkw%7C%7Cpdv%7Cc%7Cproduct%7C977-309017-SAMPLE%7Cslid%7C%7C&pgrid=63991977789&ptaid=pla-294682000766&st-t=ppc&vt-k=&utm_source=google&utm_medium=cpc&gclid=EAIaIQobChMIqo7ksMLO5QIVj8VkCh0ueAKzEAkYASA"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img src="https://img66.anypromo.com/product2/large/738494.jpg" alt="Image" width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Encore Recycled Attitood...</span>
+                  <span class="price">$245.00</span>
+                  <a title="Encore Recycled Attitood (TM) Color Changing Pencil"
+                    href="https://www.anypromo.com/pens-writing/pencils/encore-recycled-attitood-tm-color-changing-pencil-p738494?utm_source=google&utm_medium=PLA&g=1&calltrk=1&gl=1&glppc=2&gclid=EAIaIQobChMIqo7ksMLO5QIVj8VkCh0ueAKzEAkYBCABEgIravD_BwE"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+              <div class="suggestion-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71jl2T5DoFL._SL1500_.jpg" alt="Image"
+                  width="37px" height="30px">
+                <div class="content">
+                  <span class="title">Sprout Plantable Graphite...</span>
+                  <span class="price">$14.95</span>
+                  <a title="Sprout Plantable Graphite Pencils"
+                    href="https://www.amazon.com/Sprout-plantable-graphite-pencils-friendly/dp/B07932F8M8/ref=asc_df_B07932F8M8/?tag=hyprod-20&linkCode=df0&hvadid=309735725022&hvpos=1o3&hvnetw=g&hvrand=7584955186003737860&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9029455&hvtargid=pla-492653332721&psc=1"
+                    target="_blank">Buy this</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 </body>
+
+<script src="slider.js" type="module"></script>
+<script src="get_data.js" type="module"></script>
 
 </html>
