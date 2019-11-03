@@ -184,8 +184,12 @@
 
 <script src="../js/main.js"></script>
 <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
+<!-- calls googleapi js much quicker this way -->
+<script>
+requireScript('jquery', '1.11.2', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', function(){
+    requireScript('examplejs', '0.0.3', 'example.js');
+});
+</script>
 
 </html>
