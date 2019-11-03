@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Blank Page</title>
+  <title>SB Admin - Search</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
     <img src="../logo.png" alt="" width="30px" height="30px">
-    <a class="navbar-brand mr-1" href="index.html">&nbsp ecoProduct</a>
+    <a class="navbar-brand mr-1" href="index.html">&nbsp ecoShopper</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -136,7 +136,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright © ecoProduct 2019</span>
+            <span>Copyright © ecoShopper 2019</span>
           </div>
         </div>
       </footer>
@@ -184,12 +184,15 @@
 
 <script src="../js/main.js"></script>
 <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-
-<!-- calls googleapi js much quicker this way -->
 <script>
+Header set Access-Control-Allow-Origin: *
+</script>
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- calls googleapi js much quicker this way -->
+<!-- <script>
 requireScript('jquery', '1.11.2', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', function(){
     requireScript('examplejs', '0.0.3', 'example.js');
 });
-</script>
+</script> -->
 
 </html>
