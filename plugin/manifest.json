@@ -1,15 +1,29 @@
 {
-  "name": "Hello Extensions",
-  "description" : "Base Level Extension",
+  "name": "EcoShopper",
+  "description": "EcoShopper - Displays eco-friendly alternatives",
   "version": "1.0",
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "browser_action": {
     "default_popup": "eco.html",
     "default_icon": "hello_extensions.png"
   },
   "permissions": [
-"activeTab",
-"<all_urls>"
-],
+    "activeTab",
+    "tabs",
+    "*://*/*",
+    "<all_urls>"
+  ],
   "manifest_version": 2,
   "commands": {
     "_execute_browser_action": {
