@@ -6,7 +6,6 @@
 .plugin {
   padding: 10px;
   width: 320px;
-
 }
 
 img {
@@ -44,15 +43,13 @@ i:hover {
 }
 
 #signin:hover {
-  background-color: rgb(32, 191, 107, .2);
+  background-color: rgba(32, 191, 107, 0.2);
   color: white;
 }
 
 #current {
   font-style: italic;
 }
-
-#suggestion {}
 
 .suggestion-item {
   border-top: 1px solid;
@@ -74,44 +71,122 @@ i:hover {
   border: solid 1px #999;
   border-radius: 100%;
   z-index: 1;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
+}
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    width: 35%;
-    height: 10%;
-    top: 41%;
-    left: 55%;
-    background: #999;
-    z-index: 2;
-    transform: translate(-50%, -50%) rotate(45deg);
-    transition: all .2s linear;
-  }
+.arrow:before,
+.arrow:after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 10%;
+  top: 41%;
+  left: 55%;
+  background: #999;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.2s linear;
+}
 
-  &:after {
-    z-index: 3;
-    top: 59%;
-    left: 55%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+.arrow:after {
+  z-index: 3;
+  top: 59%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
-  &:hover {
-    border: solid 8px #777;
+.arrow:hover {
+  border: solid 8px #777;
+}
 
-    &:after,
-    &:before {
-      background: #777;
-    }
-  }
+.arrow:hover:after,
+.arrow:hover:before {
+  background: #777;
+}
 
-  &:active {
-    border: solid 8px #111;
+.arrow:active {
+  border: solid 8px #111;
+}
 
-    &:after,
-    &:before {
-      background: #111;
-    }
-  }
+.arrow:active:after,
+.arrow:active:before {
+  background: #111;
+}
+
+.suggestion-item img {
+  float: left;
+}
+
+.suggestion-item .content {
+  float: left;
+}
+
+.suggestion-item .content span {
+  display: block;
+}
+
+.suggestion-item .content span.title {
+  font-weight: bold;
+}
+
+.suggestion-item .content span.price {
+  font-style: italic;
+}
+
+.suggestion-item .content a {
+  display: block;
+}
+
+.suggestion-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff !important;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
 }

@@ -1,9 +1,11 @@
 let submitButton = document.getElementById("submit-button");
 let suggestionArea = document.getElementById("results");
+
+
 submitButton.addEventListener("click", function (event) {
     event.preventDefault();
     let productQuery = document.getElementById("product").value.trim();
-    let url = `https://serpapi.com/search?q=${productQuery}&tbm=shop&api_key=5680df1256b257af71c6601da987d01181bc5a80caa5eefd4fa51b5636e6e4c8`;
+    let url = `https://serpapi.com/search?q="eco%20friendly%20${productQuery}"&tbm=shop&api_key=5680df1256b257af71c6601da987d01181bc5a80caa5eefd4fa51b5636e6e4c8`;
     async function getData(url) {
         const response = await fetch(url).catch(err => err);
         const myJson = await response.json();
