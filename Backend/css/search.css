@@ -1,0 +1,9 @@
+.searchTerm{
+  padding-top: 25px;
+  width: 600px;
+
+  border-style: none;
+ border-bottom-style: solid;
+
+ align-items: center;
+}
