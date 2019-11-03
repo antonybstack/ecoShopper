@@ -1,0 +1,8 @@
+Flask==1.1.1
+Werkzeug==0.16.0
+mysql-connector-python
+flask-login
+Flask-Session
+redis
+flask-session
+python-memcached
